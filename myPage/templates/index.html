@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariyan Paul | Wildlife Photographer</title>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Ariyan Paul Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Fine Art • Nature • Wildlife</p>
+        <h1>Ariyan Paul</h1>
+        <h2>Wild Life Photographer</h2>
+        <a href="#story" class="btn">Explore My Work</a>
+      </div>
+    </section>
+
+    <section id="story" class="intro-section reveal">
+      <div class="container narrow">
+        <h2>Ariyan Paul is a fine art wildlife photographer based in Dhaka, Bangladesh.</h2>
+        <blockquote>
+          “In every walk with nature, one receives far more than he seeks.”
+          <span>— John Muir</span>
+        </blockquote>
+        <p>
+          My photography focuses on quiet natural moments — city birds, rooftop wildlife,
+          moonlit skies, and the small details of life that often go unnoticed.
+        </p>
+      </div>
+    </section>
+
+    <section class="featured-section reveal">
+      <div class="container featured-grid">
+        <div class="featured-copy">
+          <p class="section-label">Featured Shot</p>
+          <h2>Urban wildlife, captured with patience.</h2>
+          <p>
+            These photographs explore the beauty of birds living beside us — on rooftops,
+            solar panels, open concrete spaces, and city corners filled with light and shadow.
+          </p>
+        </div>
+        <div class="featured-image-wrap">
+          <img src="{% static 'images/white-p2.jpeg' %}" alt="White pigeon standing on a solar panel" class="featured-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section reveal">
+      <div class="container">
+        <p class="section-label">Selected Frames</p>
+        <h2>Stories from the wild</h2>
+
+        <div class="gallery-grid">
+          <article class="photo-card">
+            <img src="{% static 'images/black-p.jpeg' %}" alt="Black pigeon standing on rooftop" class="gallery-image">
+            <h3>Still Gaze</h3>
+            <p>A quiet portrait of a city pigeon standing confidently in soft daylight.</p>
+          </article>
+
+          <article class="photo-card">
+            <img src="{% static 'images/black-p2.jpeg' %}" alt="Black pigeon under solar panel" class="gallery-image">
+            <h3>Under The Panel</h3>
+            <p>Urban wildlife finding shelter among wires, rooftops, and solar panels.</p>
+          </article>
+
+          <article class="photo-card">
+            <img src="{% static 'images/moon.jpeg' %}" alt="Moon covered with dramatic clouds" class="gallery-image">
+            <h3>Moon Veil</h3>
+            <p>A dramatic night sky where clouds wrap around the moon like smoke.</p>
+          </article>
+
+          <article class="photo-card">
+            <img src="{% static 'images/white-p.jpeg' %}" alt="White pigeon in black and white photograph" class="gallery-image">
+            <h3>White Silence</h3>
+            <p>A monochrome study of contrast, calmness, and gentle movement.</p>
+          </article>
+
+          <article class="photo-card">
+            <img src="{% static 'images/white-p2.jpeg' %}" alt="White pigeon standing on solar panel" class="gallery-image">
+            <h3>Solar Perch</h3>
+            <p>A bright rooftop scene where nature and modern city life meet.</p>
+          </article>
+
+          <article class="photo-card">
+            <img src="{% static 'images/white-p3.jpeg' %}" alt="White pigeon on rooftop solar panel" class="gallery-image">
+            <h3>Soft Horizon</h3>
+            <p>A soft, dreamy frame of a white pigeon resting above the city.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div class="container narrow">
+        <h2>Nature is not just seen — it is felt.</h2>
+        <p>
+          This portfolio is a personal collection of wildlife, city birds, skies, and quiet
+          natural moments captured through Ariyan’s lens.
+        </p>
+        <a href="/contact/" class="btn btn-dark">Get In Touch</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ariyan Paul. All rights reserved.</p>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

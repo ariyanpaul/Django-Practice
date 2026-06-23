@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ariyan Paul</title>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Ariyan Paul Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/" class="active">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero about-hero">
+      <div class="container">
+        <p class="eyebrow">About The Photographer</p>
+        <h1>About Ariyan Paul</h1>
+      </div>
+    </section>
+
+    <section class="content-section reveal">
+      <div class="container two-column">
+        <div>
+          <p class="section-label">My Story</p>
+          <h2>Capturing wildlife with patience, respect, and curiosity.</h2>
+        </div>
+        <div>
+          <p>Ariyan Paul is an experimental fine art wildlife photographer from Dhaka, Bangladesh. His work focuses on the emotional connection between humans and the natural world, blending documentary-style observation with artistic composition.</p>
+          <p>Ariyan began photography during simple rooftop and nature walks, where he became fascinated by birds, city wildlife, changing skies, and quiet outdoor moments.</p>
+          <p>His portfolio includes bird photography, urban wildlife, landscape studies, night sky frames, and close-up natural textures. Ariyan believes every photograph should encourage people to slow down and appreciate the beauty already around them.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section reveal">
+      <div class="container stats-grid">
+        <div class="stat-card"><strong>5+</strong><span>Years of practice</span></div>
+        <div class="stat-card"><strong>30+</strong><span>Nature locations explored</span></div>
+        <div class="stat-card"><strong>100+</strong><span>Experimental photo studies</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ariyan Paul. All rights reserved.</p>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

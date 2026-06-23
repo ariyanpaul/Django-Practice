@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ariyan Paul</title>
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="/" class="logo">
+        <img src="{% static 'images/logo.png' %}" alt="Ariyan Paul Logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <div class="container">
+        <p class="eyebrow">Let’s Connect</p>
+        <h1>Contact Ariyan Paul</h1>
+      </div>
+    </section>
+
+    <section class="content-section reveal">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-label">Contact Information</p>
+          <h2>For collaborations, prints, projects, or photography inquiries.</h2>
+          <p>Feel free to reach out for wildlife photography projects, fine art prints, exhibitions, or creative collaborations.</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-item"><span>Email</span><a href="mailto:paul123@gmail.com">paul123@gmail.com</a></div>
+          <div class="contact-item"><span>Contact</span><a href="tel:3456789456">3456789456</a></div>
+          <div class="contact-item"><span>P/O Box</span><p>Somethingsomewhere 67, 87<br>Dhaka, Bangladesh</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section reveal">
+      <div class="container narrow">
+        <h2>Send a Message</h2>
+        <form class="contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+          <button type="submit" class="btn btn-dark">Submit Message</button>
+          <p class="form-note">This is a front-end demo form. It does not send messages yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Ariyan Paul. All rights reserved.</p>
+  </footer>
+
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
